@@ -11,10 +11,10 @@ Maze
 *solveMaze2New*函数采用类似A\*算法的方法，对当前节点调用*findFNeighbours2New*，在一般情况下可以达到优化算法的目的。  
 由于两种方法是同时分别在*canvas1*与*canvas2*上进行以达到对比的目的，所以增加了参数*index*取值分别为**0**或**1**代表*canvas1*和*canvas2*，调
 用函数时则为：  
-···
+```javascript
 solveMaze2(0);
 solveMaze2New(1);
-···
+```
 + 其他函数功能的补全与修改   
 由于增加了与maze2有关的几个函数，其他的函数如*onCreate*、*getCursorPos*中需要加上对于maze2的相应功能。  
 另外，由于实际运行时发现的部分问题，我对其他函数也做了一些修改：  
